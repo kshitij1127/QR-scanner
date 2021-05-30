@@ -43,8 +43,9 @@ export default class App extends React.Component {
           style={StyleSheet.absoluteFillObject}
         />
       );
-    } else if (buttonState === "normal") {
+    } 
       console.log(buttonState)
+      console.log(scanned)
       return (
         <View
           style={{ flex: 1, justifyContent: "center", alignItems: "center" }}
@@ -70,7 +71,6 @@ export default class App extends React.Component {
         </View>
       );
     }
-  }
 }
 
 const styles = StyleSheet.create({
