@@ -20,7 +20,6 @@ export default class Scan extends React.Component {
     const { status } = await Permissions.askAsync(Permissions.CAMERA);
     this.setState({
       hasCameraPermissions: status === "granted",
-      buttonState: "clicked"
     });
   };
 
